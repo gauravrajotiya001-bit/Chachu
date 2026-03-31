@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chachu | Own The Feed</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.9);
+    border-bottom: 1px solid #d4af37;
+}
+
+nav h2 {
+    color: #d4af37;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero span {
+    color: #d4af37;
+}
+
+.hero p {
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #d4af37;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #d4af37;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(212,175,55,0.6);
+}
+
+/* PRICING */
+.pricing {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.price-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+    background: #111;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    width: 260px;
+}
+
+.price-card h3 {
+    color: #d4af37;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px 30px;
+    background: #d4af37;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #d4af37;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>😏 Chachu</h2>
+<div>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Own The <span>Feed</span> 😏</h1>
+<p>Chachu helps local businesses get customers online & offline</p>
+<a href="#contact" class="btn">Get Clients Now</a>
+</section>
+
+<section id="services" class="services">
+<h2>What Chachu Does</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📈 Social Media Growth</h3>
+<p>We grow your Instagram & bring real customers.</p>
+</div>
+
+<div class="card">
+<h3>📍 Google Ranking</h3>
+<p>Get your business on top of Google searches.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Paid Ads</h3>
+<p>High ROI ads that bring leads daily.</p>
+</div>
+
+<div class="card">
+<h3>🎬 Content Creation</h3>
+<p>Reels & creatives that go viral.</p>
+</div>
+
+</div>
+</section>
+
+<section id="pricing" class="pricing">
+<h2>Simple Pricing</h2>
+
+<div class="price-card">
+<h3>Starter</h3>
+<p>₹4,999/month</p>
+<p>Basic social media handling</p>
+</div>
+
+<div class="price-card">
+<h3>Growth</h3>
+<p>₹9,999/month</p>
+<p>Ads + content + GMB optimization</p>
+</div>
+
+<div class="price-card">
+<h3>Pro</h3>
+<p>₹19,999/month</p>
+<p>Full marketing domination 😏</p>
+</div>
+
+</section>
+
+<section class="about">
+<h2>Who is Chachu?</h2>
+<p>
+Chachu is not just an agency — it’s your marketing partner.
+From local shops to growing brands, we bring customers using smart strategies and powerful execution.
+</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Talk to Chachu 😏</h2>
+
+<form onsubmit="sendWhatsApp(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="business" placeholder="Your Business Name" required>
+
+<button type="submit">Get Clients Now</button>
+</form>
+
+</section>
+
+<footer>
+© 2026 Chachu | Own The Feed 🚀
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917404249138" target="_blank">💬</a>
+
+<script>
+function sendWhatsApp(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let business = document.getElementById("business").value;
+
+    let message = `Hello Chachu 😏%0AI want more clients%0AName: ${name}%0ABusiness: ${business}`;
+
+    window.open(`https://wa.me/917404249138?text=${message}`, "_blank");
+}
+</script>
+
+</body>
+</html>
